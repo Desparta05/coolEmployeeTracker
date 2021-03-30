@@ -14,5 +14,14 @@
     "dotenv": "^8.2.0",
     "inquirer": "^7.3.3",
     "mysql2": "^2.2.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Desparta05/coolEmployeeTracker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Desparta05/coolEmployeeTracker/issues"
+  },
+  "homepage": "https://github.com/Desparta05/coolEmployeeTracker#readme"
 }
