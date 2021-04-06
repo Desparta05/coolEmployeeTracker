@@ -3,7 +3,7 @@ const mainMenu = [
     `View departments`,
     `View all employees by department`,
     'Add employee',
-    `Remove employee`,
+    `Delete employee`,
     `Update employee title`,
     `Update employee salary`,
     `Exit`
@@ -21,7 +21,7 @@ const questions = {
         }
     ],
 
-    addEmployeeQuestions: [
+    employeeQuestions: [
         {
             type: `input`,
             name: `firstName`,
