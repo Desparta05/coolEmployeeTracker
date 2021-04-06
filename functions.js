@@ -247,36 +247,6 @@ const functions = {
     }
 };
 
-const runApp = () => {
-    console.log(`Welcome to the Employee Tracker!`);
-    inquirer.prompt(questions.menuChoices).then(response => {
-        switch (response.menuChoice) {
-            case `View all employees`:
-                functions.getEmployees();
-                break;
-            case `View departments`:
-                functions.viewDepartments()
-                break;
-            case `View all employees by department`:
-                functions.getEmployeesDepartment()
-                break;
-            case `Add employee`:
-                functions.addEmployee();
-                break;
-            case `Remove employee`:
-                functions.removeEmployee();
-                break;
-            case `Update employee title`:
-                functions.updateEmployeeTitle();
-                break;
-            case `Update employee salary`:
-                functions.updateEmployeeSalary();
-                break;
-            case `Exit`:
-                functions.exit();
-                break;
-        };
-    });
-};
+
 
 module.exports = functions;

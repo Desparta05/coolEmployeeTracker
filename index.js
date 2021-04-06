@@ -8,9 +8,9 @@ const functions = require(`./functions`);
 const connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
-    user: 'root',
-    password: process.env.DB_USERNAME,
-    database: 'employees_db',
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 });
 
 connection.connect((err) => {

@@ -1,22 +1,24 @@
 const mainMenu = [
-    `View all employees`,
-    `View departments`,
-    `View all employees by department`,
-    'Add employee',
-    `Delete employee`,
-    `Update employee title`,
-    `Update employee salary`,
-    `Exit`
+    'ADD DEPARTMENT', 
+    'ADD ROLE', 
+    'ADD EMPLOYEE', 
+    'ADD MANAGER', 
+    'VIEW DEPARTMENT', 
+    'VIEW ROLE', 
+    'VIEW EMPLOYEE', 
+    'VIEW MANAGER',
+    'UPDATE EMPLOYEE ROLE',
+    `Exit APPLICATION`
 ];
 
-const departments = [`Engineering`, `Project Management`,`Supply Chain Management`, `Operations`, `Quality`];
+const departments = [`Engineering`, `Project Management`, `Supply Chain Management`, `Operations`, `Quality`];
 
 const questions = {
     menuChoices: [
         {
             type: `list`,
             name: `menuChoice`,
-            message:`Select one of the following options:`,
+            message: `Select one of the following options:`,
             choices: mainMenu
         }
     ],
@@ -52,7 +54,7 @@ const questions = {
             type: `list`,
             name: `hasManager`,
             message: `Does the employee report to a manager?`,
-            choices: [`Yes`,`No`]
+            choices: [`Yes`, `No`]
         },
     ],
 };
